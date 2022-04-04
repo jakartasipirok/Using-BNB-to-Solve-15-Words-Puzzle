@@ -137,7 +137,7 @@ def createNode(mat, emptyPos, emptyPosAfter, level, parent, final, move):
     y2 = emptyPosAfter[1]
     newMatrix[x1][y1], newMatrix[x2][y2] = newMatrix[x2][y2], newMatrix[x1][y1] #swap the empty position with the new position
     newlevel = level + 1
-    newcost = calculateCost(newMatrix, final) + newlevel
+    newcost = calculateCost(newMatrix, final) + newlevel #cost is cost of the new matrix + level
     newNode = node(parent, newMatrix, emptyPosAfter, newcost, newlevel, move)
     return newNode
 

@@ -10,9 +10,7 @@ try:
         if input("(y/n) : ") == "y":
             print("\nGenerating random puzzle...")
             puzzle = randomize()
-            print("test")
             final = read_matrix("../test/final.txt")
-            print("test2")
             print("Puzzle To Solve:\n")
             printMatrix(puzzle)
             print("Kurang[i] Value:\n")
