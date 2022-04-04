@@ -10,7 +10,7 @@ try:
         if input("(y/n) : ") == "y":
             print("\nGenerating random puzzle...")
             puzzle = randomize()
-            final = read_matrix("../test/final.txt")
+            final = read_matrix("final.txt")
             print("Puzzle To Solve:\n")
             printMatrix(puzzle)
             print("Kurang[i] Value:\n")
@@ -27,7 +27,7 @@ try:
         filename = input("\nInput Filename: ")
         file = "../test/" + filename
         puzzle = read_matrix(file)
-        final = read_matrix("../test/final.txt")
+        final = read_matrix("final.txt")
         print("Puzzle To Solve:\n")
         printMatrix(puzzle)
         print("Kurang[i] Value:\n")
